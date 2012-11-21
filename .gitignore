@@ -1,0 +1,8 @@
+.DS_Store
+LICENSE.txt
+README.md
+composer.json
+composer.phar
+data/
+templates_c/
+vendor/

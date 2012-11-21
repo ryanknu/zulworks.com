@@ -1,0 +1,29 @@
+@grad-start: #020031;
+@grad-end: #6d3353;
+
+.grad(@start, @end) {
+  background-color: @end;
+  background-image: -moz-linear-gradient(top, @start, @end);
+  background-image: -ms-linear-gradient(top, @start, @end);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(@start), to(@end));
+  background-image: -webkit-linear-gradient(top, @start, @end);
+  background-image: -o-linear-gradient(top, @start, @end);
+  background-image: linear-gradient(top, @start, @end);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='@start', endColorstr='@end', GradientType=0);
+}
+
+.shadow() {
+	-webkit-box-shadow: inset 0 3px 7px rgba(0,0,0,.2), inset 0 -3px 7px rgba(0,0,0,.2);
+	-moz-box-shadow: inset 0 3px 7px rgba(0,0,0,.2), inset 0 -3px 7px rgba(0,0,0,.2);
+	box-shadow: inset 0 3px 7px rgba(0,0,0,.2), inset 0 -3px 7px rgba(0,0,0,.2);
+}
+
+header {
+	position: relative;
+	padding: 40px 0;
+	color: #fff;
+	text-align: center;
+	text-shadow: 0 1px 3px rgba(0,0,0,.4), 0 0 30px rgba(0,0,0,.075);
+	.grad(@grad-start, @grad-end);
+	.shadow();
+}
