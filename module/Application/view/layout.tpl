@@ -35,6 +35,7 @@
                             <li {if $active_page == "Blog"}class="active"{/if}><a href="/blog">Blog</a></li>
                             <li {if $active_page == "Routing"}class="active"{/if}><a href="/zf/routing">Routing</a></li>
                             <li><a href="https://github.com/ryanknu/zulworks.com">Source Code</a></li>
+                            <li {if $active_page == "Zul"}class="active"{/if}><a href="/zf/routing">the ZUL</a></li>
                             <!--<li><a href="/">Smarty</a></li>
                             <li><a href="/">Less</a></li>
                             <li><a href="/">REST</a></li>-->

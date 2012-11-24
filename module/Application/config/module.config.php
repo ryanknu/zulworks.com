@@ -50,6 +50,36 @@ return array(
                     ),
                 ),
             ),
+            'zul' => array(
+                'type' => 'Literal',
+                'options' => array(
+                    'route' => '/zul',
+                    'defaults' => array(
+                        'controller' => 'Application\Controller\Zul',
+                        'action' => 'index',
+                    ),
+                ),
+                'child_routes' => array(
+                    'latest' => array(
+                        'type'    => 'Literal',
+                        'priority' => 2,
+                        'options' => array(
+                            'route'    => '/data',
+                            'defaults' => array(
+                                'action' => 'data',
+                            ),
+                        ),
+                    ),
+                    'default' => array(
+                        'type'    => 'Wildcard',
+                        'options' => array(
+                            'defaults' => array(
+                                'action' => 'index',
+                            ),
+                        ),
+                    ),
+                ),
+            ),
             'zf' => array(
                 'type' => 'Literal',
                 'options' => array(
@@ -115,6 +145,7 @@ return array(
             'Application\Controller\Article' => 'Application\Controller\ArticleController',
             'Application\Controller\Index' => 'Application\Controller\IndexController',
             'Application\Controller\Blog' => 'Application\Controller\BlogController',
+            'Application\Controller\Zul' => 'Application\Controller\ZulController',
         ),
     ),
     'view_manager' => array(
@@ -126,6 +157,8 @@ return array(
         'template_map' => array(
             'layout/layout'               => __DIR__ . '/../view/layout.tpl',
             'application/index/index'     => __DIR__ . '/../view/index.tpl',
+            'application/zul/index'       => __DIR__ . '/../view/zul.tpl',
+            'application/zul/data'        => __DIR__ . '/../view/zul.tpl',
             'application/blog/blog'       => __DIR__ . '/../view/blog.tpl',
             'application/blog/latest'     => __DIR__ . '/../view/latest.tpl',
             'application/article/routing' => __DIR__ . '/../view/article-routing.tpl',

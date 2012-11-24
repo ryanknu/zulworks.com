@@ -4,6 +4,7 @@ return array(
         'Application',
         'ZSmarty',
         'Less',
+        'ZuleRs',
         // 'Hyperlight',
     ),
     'module_listener_options' => array(
