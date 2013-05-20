@@ -8,5 +8,5 @@
 </div>
 
 <script type="text/javascript">
-  $(document).ready(function() { zw.getFeed(); });
+  $(document).ready(function() { zw.getFeed(); zw.getitunes(); });
 </script>

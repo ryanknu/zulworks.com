@@ -1,0 +1,15 @@
+set exported to "No"
+set export_path to "/http/zulworks.com/module/Collaborate/data"
+
+tell application "Numbers"
+	--	open "Roommates.numbers"
+	repeat with doc in documents
+		if name of doc is "Roommates" then
+			save doc as "LSDocumentTypeCSV" in export_path
+			set exported to export_path
+		end if
+	end repeat
+	
+end tell
+
+exported

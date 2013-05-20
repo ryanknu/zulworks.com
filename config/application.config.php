@@ -4,7 +4,12 @@ return array(
         'Application',
         'ZSmarty',
         'Less',
+        'Collaborate',
         'ZuleRs',
+        'Hue',
+        'ZHue',
+        'Guzzle',
+        'Symfony',
         // 'Hyperlight',
     ),
     'module_listener_options' => array(

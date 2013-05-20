@@ -44,6 +44,7 @@ class BlogController extends AbstractActionController
 		$sm = new SmartyModel;
 		$sm->blogs = $blogs;
 		$sm->active_page = 'Home';
+		$sm->setTerminal(true);
 		return $sm;
     }
 
@@ -51,6 +52,7 @@ class BlogController extends AbstractActionController
     {
 		$sm = $this->latestAction();
 		$sm->active_page = 'Blog';
+		$sm->setTerminal(false);
 		return $sm;
     }
     

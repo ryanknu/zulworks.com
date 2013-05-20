@@ -12,5 +12,9 @@
  */
 
 return array(
-    // ...
+    'db' => array(
+        'username' => 'USERNAME',
+        'password' => 'PASSWORD',
+        'dsn' => 'mysql:dbname=database;host=localhost;port=8889',
+    ),
 );

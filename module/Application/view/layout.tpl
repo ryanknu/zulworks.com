@@ -36,6 +36,7 @@
                             <li {if $active_page == "Routing"}class="active"{/if}><a href="/zf/routing">Routing</a></li>
                             <li><a href="https://github.com/ryanknu/zulworks.com">Source Code</a></li>
                             <li {if $active_page == "Zul"}class="active"{/if}><a href="/zf/routing">the ZUL</a></li>
+                            <li id="album-cover" class="right"><img src="http://zf.ryanknu.com/iTunes/Artwork" /></li>
                             <!--<li><a href="/">Smarty</a></li>
                             <li><a href="/">Less</a></li>
                             <li><a href="/">REST</a></li>-->
@@ -43,6 +44,9 @@
                     </div>
                 </div>
             </div>
+        </div>
+        <div id="index-card">
+            
         </div>
         {$content}
     </body>
