@@ -45,7 +45,6 @@
 <section id="picker">
 	<div>
 		<img id="pimg" src="/h/wheel.png" />
-		<img src="/h/wheel-indicator.png" />
 		<brightness><indicator class="brightness"></indicator></brightness>
 		<saturation><indicator class="saturation"></indicator></saturation>
 	</div>

@@ -132,14 +132,15 @@ span.colorSelector div {
 #picker {
 	position: relative;
 	display: none;
+	float: right;
 }
 
 #picker div {
 	position: absolute;
-	right: 30px;
+	right: 20px;
 	top: 0;
-	height: 430px;
-	width: 430px;
+	height: 220px;
+	width: 220px;
 }
 
 #picker img {
@@ -185,10 +186,10 @@ indicator.saturation {
 
 brightness {
 	position: absolute;
-	width: 30px;
-	height: 400px;
+	width: 20px;
+	height: 200px;
 	left: 0;
-	bottom: 30px;
+	bottom: 20px;
 	background: -moz-linear-gradient(top,  rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%); /* FF3.6+ */
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,1)), color-stop(100%,rgba(0,0,0,0))); /* Chrome,Safari4+ */
 	background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,1) 100%); /* Chrome10+,Safari5.1+ */
@@ -200,9 +201,9 @@ brightness {
 
 saturation {
 	position: absolute;
-	width: 400px;
-	height: 30px;
-	left: 30px;
+	width: 200px;
+	height: 20px;
+	left: 20px;
 	bottom: 0;
 	
 	background: -moz-linear-gradient(left,  rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%); /* FF3.6+ */
